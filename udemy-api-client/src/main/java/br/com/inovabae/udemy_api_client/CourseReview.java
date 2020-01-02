@@ -1,32 +1,43 @@
 package br.com.inovabae.udemy_api_client;
 
+import java.util.Date;
+
 public class CourseReview {
-	private String _class;
-	private String id;
-	private Integer rating;
+	private Course course;
+	private String content;
+	private Double rating;
+	private Date created;
 
-	public String get_class() {
-		return _class;
+	public Course getCourse() {
+		return course;
 	}
 
-	public void set_class(String _class) {
-		this._class = _class;
+	public void setCourse(Course course) {
+		this.course = course;
 	}
 
-	public String getId() {
-		return id;
+	public String getContent() {
+		return content;
 	}
 
-	public void setId(String id) {
-		this.id = id;
+	public void setContent(String content) {
+		this.content = content;
 	}
 
-	public Integer getRating() {
+	public Double getRating() {
 		return rating;
 	}
 
-	public void setRating(Integer rating) {
+	public void setRating(Double rating) {
 		this.rating = rating;
+	}
+
+	public Date getCreated() {
+		return created;
+	}
+
+	public void setCreated(Date created) {
+		this.created = created;
 	}
 
 }
